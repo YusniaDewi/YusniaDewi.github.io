@@ -1,0 +1,520 @@
+ 
+@font-face {
+    font-family: "Myriad";
+    src: url(myriad-pro-cufonfonts-webfont/MYRIADPRO-REGULAR.woff);
+}
+
+@font-face {
+    font-family: "Myriad Bold";
+    src: url(myriad-pro-cufonfonts-webfont/MYRIADPRO-SEMIBOLD.woff);
+}
+
+@font-face {
+    font-family: "Free Hand";
+    src: url(freehandbt/Freehand521BT.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 100px;
+    height: 65px;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.navlink {
+    list-style-type: none;
+}
+
+.navlink li {
+    display: inline;
+    padding: 39px 50px;
+    line-height: 100px;
+}
+
+.navlink li a {
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+}
+
+.navlink li:hover {
+    background: #ed1c24;
+}
+
+.navlink li a:hover{
+    color: black;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color:pink;
+    justify-content: space-between;
+    font-family: Myriad;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 31px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.isi {
+    margin-top: 100px;
+}
+
+
+.teksbrnd {
+    transform: translate(4%, 25%);
+    color: white;
+    width: 95%;
+    height: 530px;
+    text-align: center;
+    position: relative;
+}
+
+
+.beranda {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/BERANDA.jpg);
+    background-position: right;
+    background-size: cover;
+    margin-top: 40px;
+    width: 100%;
+    height: 50%;
+    font-family: Myriad;
+    position: relative;
+    object-fit: cover;
+}
+
+.logo2 {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.teksbrnd h1{
+    font-size: 75px;
+    margin-bottom: 70px;
+}
+
+.teksbrnd p {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 25pt;
+}
+
+.batas {
+    background-color: black;
+    width: 100%;
+    height: 15px;
+}
+
+.tentang {
+    display: flex;
+    margin-top: 154px;
+    margin-bottom: 150px;
+    width: 100%;
+    height: 350px;
+    justify-content: space-between;
+    font-family: Myriad;
+}
+
+.teks1 {
+    margin-left: 10px;
+    margin-right: 0;
+    margin-bottom: 124px;
+    width: 900px;
+    height: 350px;
+}
+
+.teks1 h1 {
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 90px;
+    font-family: Myriad Bold;
+}
+
+.teks1 p {
+    font-size: 20pt;
+    text-align: center;
+}
+
+.garis {
+    background-color: black;
+    width: 15px;
+    height: 350px;
+    margin-right: 31px;
+    margin-left: 31px;
+}
+
+.gambar1 {
+    background-image: url(assets/GAMBAR1.jpg);
+    width: 300px;
+    height: 350px;
+    margin-right: 73px;
+    background-repeat: no-repeat;
+    background-position: 43% 100%;
+}
+
+.Sejarah {
+    display: flex;
+    margin-top: 154px;
+    margin-bottom: 150px;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    font-family: Myriad;
+}
+
+.gambar2 {
+    background-image: url(assets/GAMBAR2.jpg);
+    width: 300px;
+    height: 350px;
+    margin-left: 73px;
+    background-repeat: no-repeat;
+    background-position: 43% 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.garis2 {
+    background-color: black;
+    width: 15px;
+    height: 350px;
+    margin-right: 0;
+    margin-left: 31px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.teks2 {
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: auto;
+    margin-top: 10px;
+    width: 900px;
+    height: 350px; 
+}
+
+
+.teks2 h1 {
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Myriad Bold;
+}
+
+
+.teks2 p {
+    font-size: 20pt;
+    text-align: center;
+}
+
+.Varian {
+    text-align: center;
+    margin-top: 154px;
+    margin-bottom: 150px;
+    width: 100%;
+    font-family: Myriad Bold;
+    font-size: 30pt;
+}
+
+.baris1 {
+    display: flex;
+    height: 587px;
+    justify-content: space-between;
+    margin-left: 71px;
+    margin-right: 71px;
+    margin-bottom: 80px;
+}
+
+.baris1 h1 {
+    font-family: Myriad Bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.baris1 p {
+    font-family: Myriad;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.blazer {
+    background-image: url(assets/gimbir1.jpg);
+    height: 267px;
+    width: 298px;
+    background-repeat: no-repeat;
+    background-size: 400px 305px;
+    background-position: 50% 100%;
+}
+
+.child {
+    background-image: url(assets/gimbir2.jpg);
+    height: 267px;
+    width: 298px;
+    background-repeat: no-repeat;
+    background-size: 390px 290px;
+    background-position: 60% 60%;
+}
+
+.kemeja {
+    background-image: url(assets/gimbir3.jpg);
+    height: 267px;
+    width: 298px;
+    background-repeat: no-repeat;
+    background-size: 465px 365px;
+    background-position: 55% 50%;
+}
+
+.baris2 {
+    display: flex;
+    height: 587px;
+    justify-content: space-between;
+    margin-left: 71px;
+    margin-right: 71px;
+}
+
+.baris2 h1 {
+    font-family: Myriad Bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.baris2 p {
+    font-family: Myriad;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.summer {
+    background-image: url(assets/gimbir4.jpg);
+    height: 267px;
+    width: 298px;
+    background-repeat: no-repeat;
+    background-size: 400px 305px;
+    background-position: 70% 50%;
+}
+
+.klikbuton {
+    position: relative;
+    transform: translateX(80%);
+    background-color: rgb(68, 66, 66);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: none;
+}
+
+.pesan {
+    position: relative;
+    transform: translateX(70%);
+    background-color: rgb(68, 66, 66);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: none;
+}
+
+.klikbuton:hover {
+    background-color: rgb(56, 52, 52);
+}
+
+.pesan:hover {
+    background-color: rgb(56, 52, 52);
+}
+
+.klik {
+    margin-top: 150px;
+    font-family: Myriad;
+}
+
+.coat {
+    background-image: url(assets/gimbir5.jpg);
+    height: 267px;
+    width: 298px;
+    background-repeat: no-repeat;
+    background-size: 385px 285px;
+    background-position: 63% 80%;
+}
+
+.pemesanan {
+    background-color: black;
+    color: white;
+    font-family: Myriad;
+}
+
+.pemesanan h1 {
+    text-align: center;
+    font-family: Myriad bold;
+}
+
+.teks1a {
+    text-align: center;
+    font-family: Myriad;
+    margin-top: 20px;
+}
+
+.pemesanan a {
+    margin-top: 0px;
+    margin-left: 485px;
+}
+
+.wa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.larik1 {
+    display: flex;
+    justify-content: center;
+    width: 324px;
+    height: 62px;
+}
+
+.larik1 img {
+    object-fit: cover;
+    object-position: 0% 50%;
+
+    width: 45px;
+    height: 45px;
+    margin-top: 0px;
+}
+
+.textwa {
+    margin-left: 0px;
+}
+
+.wagaris {
+    background-color: white;
+    width: 2px;
+    height: 35px;
+    margin-top: 4px;
+    margin-left: 25px;
+    margin-right: 17px;
+}
+
+.ig {
+    display: flex;
+    justify-content: center;
+    margin-left: 31px;
+}
+
+.larik1a {
+    display: flex;
+    justify-content: center;
+    width: 324px;
+    height: 62px;
+}
+
+.larik1a img {
+    object-fit: cover;
+    object-position: 0% 50%;
+
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.logobawah {
+    display: flex;
+    justify-content: center;
+    font-family: Free Hand;
+    margin-top: 45px;
+}
+
+.logobawah h2 {
+    margin-top: 15px;
+    margin-left: 3px;
+}
+
+.logobawah img {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 45px;
+    height: 48px;
+}
+
+
+@media (max-width: 802px) {
+    .isi {
+        margin-top: 95px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlink.active {
+        display: inline;
+    }
+
+    .batas {
+        visibility: hidden;
+    }
+
+    .pesan {
+        transform: translateX(-135%);
+    }
+
+    .klik {
+        visibility: hidden;
+    }
+
+    .baris1 div {
+        width: 80%;
+    }
+
+    .baris2 div{
+        width: 80%;
+        
+    }
+
+    
+
+}
+
