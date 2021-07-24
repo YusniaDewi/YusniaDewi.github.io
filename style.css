@@ -1,12 +1,12 @@
- 
+
 @font-face {
     font-family: "Myriad";
-    src: url(myriad-pro-cufonfonts-webfont/MYRIADPRO-REGULAR.woff);
+    src: url(assets/myriad-pro-cufonfonts-webfont/MYRIADPRO-REGULAR.woff);
 }
 
 @font-face {
     font-family: "Myriad Bold";
-    src: url(myriad-pro-cufonfonts-webfont/MYRIADPRO-SEMIBOLD.woff);
+    src: url(assets/myriad-pro-cufonfonts-webfont/MYRIADPRO-BOLD.woff);
 }
 
 @font-face {
@@ -19,6 +19,10 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+body{
+  font-family: sans-serif;
 }
 
 .logo {
@@ -217,7 +221,7 @@
     margin-bottom: auto;
     margin-top: 10px;
     width: 900px;
-    height: 350px; 
+    height: 350px;
 }
 
 
@@ -237,137 +241,113 @@
 .Varian {
     text-align: center;
     margin-top: 154px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     width: 100%;
     font-family: Myriad Bold;
     font-size: 30pt;
 }
 
-.baris1 {
+.baris {
     display: flex;
-    height: 587px;
-    justify-content: space-between;
-    margin-left: 71px;
-    margin-right: 71px;
+    flex-wrap: wrap;
     margin-bottom: 80px;
+    justify-content: space-around;
 }
 
-.baris1 h1 {
+.card {
+    box-sizing: border-box;
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 15px;
+}
+
+.klik {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.klik h2{
+    margin: 30px auto;
+}
+
+.klikbuton {
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  width: max-content;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 7px rgb(58 56 56);
+  background-color: rgb(68, 66, 66);
+  opacity: 0.8;
+  margin: 30px auto;
+}
+
+.klikbuton:hover{
+  opacity: 1;
+}
+
+.klikbuton:active{
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+.card div {
+    height: 267px;
+    width: 298px;
+    background-size: cover;
+}
+
+.card h1 {
     font-family: Myriad Bold;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 35px;
 }
 
-.baris1 p {
+.card p {
     font-family: Myriad;
     text-align: center;
     font-size: 15pt;
+}
+
+.card .price {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
 .blazer {
     background-image: url(assets/gimbir1.jpg);
-    height: 267px;
-    width: 298px;
-    background-repeat: no-repeat;
-    background-size: 400px 305px;
-    background-position: 50% 100%;
 }
 
 .child {
     background-image: url(assets/gimbir2.jpg);
-    height: 267px;
-    width: 298px;
-    background-repeat: no-repeat;
-    background-size: 390px 290px;
-    background-position: 60% 60%;
 }
 
 .kemeja {
     background-image: url(assets/gimbir3.jpg);
-    height: 267px;
-    width: 298px;
-    background-repeat: no-repeat;
-    background-size: 465px 365px;
-    background-position: 55% 50%;
-}
-
-.baris2 {
-    display: flex;
-    height: 587px;
-    justify-content: space-between;
-    margin-left: 71px;
-    margin-right: 71px;
-}
-
-.baris2 h1 {
-    font-family: Myriad Bold;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 35px;
-}
-
-.baris2 p {
-    font-family: Myriad;
-    text-align: center;
-    font-size: 15pt;
 }
 
 .summer {
     background-image: url(assets/gimbir4.jpg);
-    height: 267px;
-    width: 298px;
-    background-repeat: no-repeat;
-    background-size: 400px 305px;
-    background-position: 70% 50%;
-}
-
-.klikbuton {
-    position: relative;
-    transform: translateX(80%);
-    background-color: rgb(68, 66, 66);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 20px;
-    cursor: pointer;
-    float: none;
-}
-
-.pesan {
-    position: relative;
-    transform: translateX(70%);
-    background-color: rgb(68, 66, 66);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 20px;
-    cursor: pointer;
-    float: none;
-}
-
-.klikbuton:hover {
-    background-color: rgb(56, 52, 52);
-}
-
-.pesan:hover {
-    background-color: rgb(56, 52, 52);
-}
-
-.klik {
-    margin-top: 150px;
-    font-family: Myriad;
 }
 
 .coat {
-    background-image: url(assets/gimbir5.jpg);
-    height: 267px;
-    width: 298px;
-    background-repeat: no-repeat;
-    background-size: 385px 285px;
-    background-position: 63% 80%;
+  background-image: url(assets/gimbir5.jpg);
 }
 
 .pemesanan {
@@ -387,37 +367,40 @@
     margin-top: 20px;
 }
 
-.pemesanan a {
-    margin-top: 0px;
-    margin-left: 485px;
+.pesan {
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  width: max-content;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 7px rgb(58 56 56);
+  background-color: rgb(68, 66, 66);
+  opacity: 0.8;
+  margin: 20px auto 0;
 }
 
-.wa {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.pesan:hover{
+  opacity: 1;
 }
 
-.larik1 {
-    display: flex;
-    justify-content: center;
-    width: 324px;
-    height: 62px;
+.pesan:active{
+  box-shadow: none;
+  position: relative;
+  top: 7px;
 }
 
-.larik1 img {
-    object-fit: cover;
-    object-position: 0% 50%;
-
-    width: 45px;
-    height: 45px;
-    margin-top: 0px;
+.contact-table{
+  margin: 20px auto 0;
 }
 
-.textwa {
-    margin-left: 0px;
+.contact-table tr td img {
+  width: 45px;
+  height: 45px;
+  margin-top: 0px;
 }
-
 .wagaris {
     background-color: white;
     width: 2px;
@@ -427,34 +410,13 @@
     margin-right: 17px;
 }
 
-.ig {
-    display: flex;
-    justify-content: center;
-    margin-left: 31px;
-}
-
-.larik1a {
-    display: flex;
-    justify-content: center;
-    width: 324px;
-    height: 62px;
-}
-
-.larik1a img {
-    object-fit: cover;
-    object-position: 0% 50%;
-
-    width: 45px;
-    height: 45px;
-    margin-top: 5px;
-    margin-right: 5px;
-}
 
 .logobawah {
     display: flex;
     justify-content: center;
     font-family: Free Hand;
     margin-top: 45px;
+    margin: 0 auto;
 }
 
 .logobawah h2 {
@@ -511,10 +473,9 @@
 
     .baris2 div{
         width: 80%;
-        
+
     }
 
-    
+
 
 }
-
